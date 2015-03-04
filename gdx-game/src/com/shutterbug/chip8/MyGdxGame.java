@@ -41,8 +41,8 @@ public class MyGdxGame implements ApplicationListener
 	public void create()
 	{
 		ShaderProgram.pedantic = false;
-			vertex = new FileHandle("/sdcard/V.vert");
-			fragment = new FileHandle("/sdcard/Frag.frag");
+		vertex = Gdx.files.internal("V.vert");
+		fragment = Gdx.files.internal("Frag.frag");
 			
 		logger = new FPSLogger();
 		Pixmap pixmapb = new Pixmap( 10,10, Format.RGBA8888);
